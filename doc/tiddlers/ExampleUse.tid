@@ -1,0 +1,29 @@
+created: 20220703211817483
+modified: 20220703213416454
+tags: 
+title: Example Use
+type: text/vnd.tiddlywiki
+
+With this tiddler in view, try the following (use only the keyboard)
+
+!! 1. Find and highlight
+
+* Type <kbd>Ctrl-F</kbd> to focus the search field
+* Enter the search term //search//
+* Press <kbd>Ctrl-G</kbd> to highlight all occurances of the term "search"
+* Continue to press <kbd>Ctrl-G</kbd> to search forwards, and <kbd>Shift-Ctrl-G</kbd> to go back or cycle around
+* Note the search field stays in focus for editing. Amend the term to //searching// and press <kbd>Ctrl-G</kbd> again
+
+!! 2. Search for a Tiddler and highlight key words
+
+* Type <kbd>Ctrl-F</kbd> to focus the search field
+* Type //Lorem// to find the "Lorem Ipsum" tiddler
+* Cursor down and press <kbd>Enter</kbd> to display the tiddler
+* Press <kbd>Backspace</kbd> a few times so only //Lorem// is visible
+* Press <kbd>Ctrl-G</kbd> to highlight all occurances of "Lorem" in the text
+* Continue to press <kbd>Ctrl-G</kbd> to search forwards, and <kbd>Shift-Ctrl-G</kbd> to go back or cycle around
+* Press <kbd>Esc</kbd> when the search is in focus, or clear the search field to remove highlighting
+
+!! 3. Configuration
+
+* Shortcuts can be remapped in the Control Panel

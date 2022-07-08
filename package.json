@@ -1,0 +1,13 @@
+{
+  "name": "tiddlywiki-find-in-page-plugin",
+  "version": "0.1.0","description": "A Tiddlywiki plugin that finds text in tiddlers currently view","license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahanniga/tiddlywiki-find-in-page-plugin"
+  },
+  "scripts": {
+    "build": "make"
+  },"author": "A Hannigan <github@hannigan.uk.com>","devDependencies": {
+    "tiddlywiki": "^5.1.23"
+  }
+}
