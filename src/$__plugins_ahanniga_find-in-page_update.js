@@ -17,9 +17,23 @@ module.exports = function(force = false, customSearchedText = null, highlight = 
 	var searchedText = customSearchedText !== null ? customSearchedText : $tw.wiki.getTiddlerText(searchTiddler) || "";
 	var totalCounter = 0;
 
-	if((searchedText === previousSearchedText) && !force) return false;
+	if((searchedText === previousSearchedText) && !force) {
+		return false;
+	}
 
-	if(!markInstance) markInstance = new Mark(document.getElementsByClassName("tc-story-river")[0]);
+	if(!markInstance) {
+		var nodes = document.getElementsByClassName("tc-story-river");
+		if(nodes.length == 0) {
+			// tiddlywiki-multi-columns plugin?
+			nodes = document.getElementsByClassName("main btc-column-container");
+		}
+		if(nodes.length > 0) {
+			markInstance = new Mark(nodes[0]);	
+		}
+		else {
+			return false;
+		}
+	}
 	markInstance.unmark();
 	if(searchedText !== "") markInstance.mark(searchedText, {
 		exclude: [
