@@ -36,6 +36,7 @@ module.exports = function(force = false, customSearchedText = null, highlight = 
 	}
 	markInstance.unmark();
 	if(searchedText !== "") markInstance.mark(searchedText, {
+		separateWordSearch: false,
 		exclude: [
 			".tc-tiddler-edit-frame *"
 		],
